@@ -1,0 +1,38 @@
+<svg
+  version="1.1"
+  baseProfile="full"
+  width="300"
+  height="300"
+  viewBox="0 0 300 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="#FFD700"
+    stroke="#B8860B"
+    stroke-width="2"
+    stroke-linejoin="round"
+  >
+    <path d="M 90 160 Q 150 180 210 160 L 210 150 Q 150 170 90 150 Z" />
+    <path d="M 100 150 L 105 110 L 130 130 Z" />
+    <path d="M 140 150 L 150 80 L 160 150 Z" />
+    <path d="M 170 150 L 195 110 L 200 150 Z" />
+  </g>
+  <defs>
+    <path
+      id="quarterArc"
+      d="M 100 210 A 80 80 0 0 1 220 210"
+      fill="none"
+      stroke="none"
+    />
+  </defs>
+  <text
+    font-size="20"
+    fill="#333333"
+    font-weight="bold"
+    text-anchor="middle"
+  >
+    <textPath href="#quarterArc" startOffset="50%">
+      KoiQueen
+    </textPath>
+  </text>
+</svg>
