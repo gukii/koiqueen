@@ -1,48 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>KoiQueen Page</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #f2f2f2; /* light gray header */
-        padding: 10px;
-        position: relative;
-      }
-      .logo-container {
-        float: left; /* top-left position */
-      }
-      /* Optionally, resize the logo by setting a specific width (e.g., 60px) */
-      .logo-container img {
-        width: 60px;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <!-- Reference the external SVG file -->
-        <img src="logo.svg" alt="KoiQueen Logo" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142329">
+  <meta name="description" content="The life, eye, and koi of Ms. Chung.">
+  <title>Koi Queen — Ms. Chung</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Koi Queen home"><span class="brand-mark" aria-hidden="true"></span><span>KOI QUEEN</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#story" data-i18n="navStory">Story</a>
+      <a href="#world" data-i18n="navWorld">The world</a>
+      <a href="#koi" data-i18n="navKoi">The koi</a>
+      <a href="#people" data-i18n="navPeople">People</a>
+    </nav>
+    <div class="header-actions">
+      <label class="sr-only" for="language">Language</label>
+      <select id="language" aria-label="Language"><option value="en">EN</option><option value="cn">CN</option><option value="tw">TW</option></select>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Ms. Chung beside the ponds at her family farm"></div>
+      <div class="hero-wash"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow light" data-i18n="heroEyebrow">THE WOMAN BEHIND THE WATER</p>
+        <h1 id="hero-title"><span data-i18n="heroTitle1">An eye for</span><br><em data-i18n="heroTitle2">living art.</em></h1>
+        <p class="hero-sub" data-i18n="heroSub">Ms. Chung turned a family inheritance into a life among the world’s finest koi. This is her story—and the people and fish at its heart.</p>
+        <div class="hero-links"><a class="pill primary" href="#moment"><span data-i18n="heroStart">The S-Legend story</span><span aria-hidden="true">↗</span></a><a class="text-link light-link" href="#koi"><span data-i18n="heroKoi">Meet the koi</span><span aria-hidden="true">↓</span></a></div>
       </div>
-    </header>
+      <div class="hero-bottom wrap"><span data-i18n="heroPlace">YUNLIN · TAIWAN</span><span data-i18n="heroScroll">SCROLL TO EXPLORE ↓</span></div>
+    </section>
 
-    <!-- bsky-embed code -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js"
-      async
-    ></script>
+    <section class="moment section-pad" id="moment">
+      <div class="wrap moment-grid">
+        <div class="moment-number" aria-hidden="true">203<span>million</span></div>
+        <div class="moment-copy">
+          <p class="eyebrow light" data-i18n="momentLabel">01 / S-LEGEND</p>
+          <h2 data-i18n="momentTitle">One bid became a defining moment.</h2>
+          <p class="moment-lead" data-i18n="momentLead">At Sakai Fish Farm’s 2018 auction in Japan, Ms. Chung bid as the Taiwan dealer for a client. The Kohaku S-Legend reached ¥203 million.</p>
+          <p data-i18n="momentBody">The number travelled around the world. Behind it were years of trust, an exceptional fish, and the judgment to recognize what others would remember.</p>
+          <div class="moment-facts"><div><strong>2018</strong><span data-i18n="factAuction">Sakai auction</span></div><div><strong>¥203m</strong><span data-i18n="factBid">Winning bid</span></div><div><strong data-i18n="factRoleValue">Dealer</strong><span data-i18n="factRole">For a client</span></div></div>
+          <a class="text-link light-link moment-source" href="https://koijudges.uk/s-legend/" target="_blank" rel="noopener noreferrer"><span data-i18n="momentSource">Read the UK judges’ account</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="moment-photo"><img src="koiqueen-research-20261115/deliverables/originals/mikeshouts-01.jpg" alt="Ms. Chung at the auction beside the 203 million yen result" loading="lazy"><figcaption data-i18n="captionAuction">At the Sakai auction, 2018 · archival photograph</figcaption></figure>
+      </div>
+    </section>
 
-    <bsky-embed
-      username="koiqueen.com"
-      limit="5"
-      load-more="true"
-    >
-    </bsky-embed>
-  </body>
+    <section class="bloodline section-pad">
+      <div class="wrap bloodline-grid">
+        <div><p class="eyebrow" data-i18n="bloodLabel">BEYOND THE BID</p><h2 data-i18n="bloodTitle">A name carried forward in a bloodline.</h2></div>
+        <div><p class="lead" data-i18n="bloodBody">S-Legend was bred by Sakai Fish Farm. Her lineage matters to collectors and breeders, and the story of her offspring continues beyond that auction day.</p><div class="lineage" aria-label="S-Legend parentage"><span>NEO UNIVERSE <small data-i18n="lineageMother">female parent</small></span><span class="lineage-cross">×</span><span>TOMAHAWK <small data-i18n="lineageFather">male line</small></span><span class="lineage-equal">→</span><strong>S-LEGEND</strong></div><p class="fine-note" data-i18n="bloodNote">Parent lines identified in an interview with Sakai Fish Farm’s breeder. Individual descendants will be added when documented.</p></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="story">
+      <div class="wrap intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow" data-i18n="storyLabel">02 / THE FARM</p>
+          <h2 data-i18n="storyTitle">She grew up at Sing Chang. Then she returned to lead it.</h2>
+          <p class="lead" data-i18n="storyLead">Ms. Chung grew up at Sing Chang Koi Farm in Yunlin. After studying art in Beijing, she returned to the family farm and became its CEO.</p>
+          <p data-i18n="storyBody">As Sing Chang’s CEO, she took the farm’s koi to international shows and built direct relationships with overseas buyers. She also ran EMDAT, an export association, and organized koi shows in Taiwan.</p>
+          <p data-i18n="storyNextChapter">Later, she opened her own koi trading and research business in Pingtung: the International Koi Institute, at koi-institute.com.</p>
+          <div class="story-sources"><a href="https://web.archive.org/web/20071203113808/http://www.sc-koi.com/index.php/en/home/koi_america_usa_2007" target="_blank" rel="noopener noreferrer" data-i18n="storySourceFarm">Sing Chang’s 2007 report names her CEO ↗</a><a href="https://web.archive.org/web/20081211024652/http://www.sc-koi.com/index.php/en/home/holland_koishow_2008" target="_blank" rel="noopener noreferrer" data-i18n="storySourceEMDAT">EMDAT in the 2008 show report ↗</a><a href="https://koi-institute.com/" target="_blank" rel="noopener noreferrer" data-i18n="storySourceIKI">International Koi Institute ↗</a></div>
+          <a class="text-link" href="#world"><span data-i18n="storyNext">How she found buyers abroad</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="intro-gallery">
+          <figure class="intro-photo main-photo"><img src="koiqueen-research-20261115/deliverables/originals/mirror-03.jpg" alt="Ms. Chung walking through a koi farm" loading="lazy"><figcaption data-i18n="captionFarm">At the family farm</figcaption></figure>
+          <figure class="intro-photo small-photo"><img src="koiqueen-research-20261115/deliverables/originals/mirror-04.jpg" alt="Archival family portrait" loading="lazy"><figcaption data-i18n="captionFamily">Family archive</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="tedx section-pad" id="tedx" aria-labelledby="tedx-title">
+      <div class="wrap tedx-grid">
+        <div class="tedx-copy reveal">
+          <p class="eyebrow" data-i18n="tedxLabel">2014 · TEDxTAIPEI</p>
+          <h2 id="tedx-title" data-i18n="tedxTitle">The story, in her own words.</h2>
+          <p class="lead" data-i18n="tedxLead">On the TEDxTaipei stage, Ms. Chung spoke about returning to a family business under heavy debt and learning to face setbacks as choices.</p>
+          <p data-i18n="tedxBody">Her story also reveals the work behind the trophies: finding her place in a male-dominated trade, reshaping a traditional koi company, and meeting overseas buyers directly instead of depending on intermediaries. She brought fish breeding into a wider, more connected market.</p>
+          <a class="text-link" href="https://www.youtube.com/watch?v=nbLiaIIh4NM" target="_blank" rel="noopener noreferrer"><span data-i18n="tedxAction">Watch “One Third of Life”</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="tedx-figure reveal"><a href="https://www.youtube.com/watch?v=nbLiaIIh4NM" target="_blank" rel="noopener noreferrer" aria-label="Watch Ms. Chung at TEDxTaipei"><img src="koiqueen-research-20261115/tedx-media/nbLiaIIh4NM.jpg" alt="Ms. Chung speaking on the TEDxTaipei stage" loading="lazy"><span class="play" aria-hidden="true">▶</span></a><figcaption data-i18n="tedxCaption">Ms. Chung at TEDxTaipei, 2014 · TEDxTaipei video still</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="discovery section-pad" id="discovery" aria-labelledby="discovery-title"><div class="wrap discovery-grid"><div class="discovery-photos reveal"><figure><img src="koiqueen-research-20261115/photos/emdat-koiqueen-discovery-channel-410x288.jpg" alt="Ms. Chung being interviewed in front of a Discovery backdrop" loading="lazy"><figcaption data-i18n="discoveryPhoto1">Ms. Chung at a Discovery interview · EMDAT archive</figcaption></figure><figure><img src="koiqueen-research-20261115/photos/emdat-yingying-chung-press-conference-yunlin-410x288.jpg" alt="Ms. Chung speaking to reporters at a Yunlin press event" loading="lazy"><figcaption data-i18n="discoveryPhoto2">Press event in Yunlin · EMDAT archive</figcaption></figure></div><div class="discovery-copy reveal"><p class="eyebrow" data-i18n="reportLabel">ON CAMERA</p><h2 id="discovery-title" data-i18n="reportTitle">Discovery followed the story home.</h2><p data-i18n="reportBody">In 2011, Discovery featured Ms. Chung’s entrepreneurial journey. Yunlin County held a preview event, and its announcement described how she brought Taiwanese koi to international competitions. The archived photographs preserve her speaking to the cameras.</p><div class="discovery-links"><a href="https://agriculture.yunlin.gov.tw/News_Content.aspx?n=693&amp;s=206600" target="_blank" rel="noopener noreferrer" data-i18n="discoverySource">Read Yunlin County’s announcement ↗</a><a href="https://web.archive.org/web/20170522020737/http://emdat.org/images/slides/2main-410x288/koiqueen-discovery-channel-410x288.jpg" target="_blank" rel="noopener noreferrer" data-i18n="reportLink">Open the archived interview photo ↗</a><a href="https://web.archive.org/web/20170522020749/http://emdat.org/images/slides/2main-410x288/yingying-chung-press-conference-yunlin-410x288.jpg" target="_blank" rel="noopener noreferrer" data-i18n="discoveryPhotoLink">Open the archived press photo ↗</a></div></div></div></section>
+
+    <section class="world" id="world" aria-labelledby="world-title">
+      <div class="world-stage"><div class="wrap world-stage-layout"><div class="world-intro reveal"><p class="eyebrow light" data-i18n="worldLabel">03 / THE SHOW CIRCUIT</p><h2 id="world-title" data-i18n="worldTitle">A booth. A trophy. A market built in person.</h2><p data-i18n="worldLead">At the 2018 Holland Koi Show, Ms. Chung stood at the IKI Taiwan booth with British koi judges. Years earlier, she had begun taking fish to European shows and speaking directly with buyers. Those encounters shaped what she bred, how she presented it, and the partners she chose.</p><div class="world-links"><a href="https://koijudges.uk/s-legend/" target="_blank" rel="noopener noreferrer" data-i18n="worldLinkUK">See the judges’ photographs ↗</a><a href="https://www.cw.com.tw/article/5000480" target="_blank" rel="noopener noreferrer" data-i18n="worldLinkMagazine">Read the 2010 magazine profile ↗</a></div></div><figure class="world-stage-photo reveal"><img src="koiqueen-research-20261115/photos/uk-judges-2019.jpg" alt="Ms. Chung at the IKI Taiwan booth with British koi judges at the 2018 Holland Koi Show" loading="lazy"><figcaption data-i18n="worldStageCaption">Holland Koi Show, 2018 · IKI Taiwan booth and British koi judges · Koi Judges UK</figcaption></figure></div></div>
+      <div class="world-proof wrap">
+        <figure class="show-photo reveal"><img src="koiqueen-research-20261115/photos/moa-holland-2009.jpg" alt="Ms. Chung at the 2009 Holland koi show with fellow participants and a trophy" loading="lazy"><figcaption data-i18n="worldPhotoCaption">Holland, 2009 · Sing Chang photograph published by Taiwan’s Ministry of Agriculture</figcaption></figure>
+        <div class="world-proof-copy reveal"><span class="chapter-year">2003 →</span><h3 data-i18n="worldProofTitle">The first trip changed the plan.</h3><p data-i18n="worldProofBody">Ms. Chung visited the Holland show in 2003 and saw a market that barely knew Taiwanese koi. A Ministry of Agriculture account records her return under the “Formosa Taiwan” name; this 2009 photograph places her at the show. By 2010, CommonWealth reported that she attended five international shows a year and sold directly across borders.</p><a class="text-link" href="https://kids.moa.gov.tw/view.php?func=knowledge&amp;subfunc=article&amp;pid=30&amp;id=162" target="_blank" rel="noopener noreferrer"><span data-i18n="worldSource">See the Ministry account</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="archive-band"><div class="wrap"><div class="archive-band-head"><p class="eyebrow" data-i18n="archiveLabel">FROM THE ARCHIVE</p><p data-i18n="archiveIntro">The old show sites preserved exhibition photographs, sales reports, and captions naming Ms. Chung with customers and awards.</p></div><div class="archive-pair"><figure><img src="koiqueen-research-20261115/photos/sc-koi-holland-2011-collage.jpg" alt="Sing Chang collage from the 2011 Holland Koi Show, showing booths, visitors, and an award ceremony" loading="lazy"><figcaption><strong data-i18n="archive2011">Holland, 2011 · customers, students, and an award</strong><a href="https://web.archive.org/web/20120213141253/http://www.sc-koi.com/index.php/en/home/holland_koishow_2011" target="_blank" rel="noopener noreferrer" data-i18n="archive2011Link">Read the archived show report ↗</a></figcaption></figure><figure><img src="koiqueen-research-20261115/photos/archive-holland-2005-TaiwanKoi-in-Holland-2005-640-14.jpg" alt="The TaiwanKOI booth at the 2005 Holland Koi Show" loading="lazy"><figcaption><strong data-i18n="archiveBooth">Holland, 2005 · the TaiwanKOI booth</strong><a href="https://web.archive.org/web/20060613033354/http://www.taiwankoi.com/PHOTOS/Taiwankoi%20Exhibitions/Holland%20Koishow%202005/index.php" target="_blank" rel="noopener noreferrer" data-i18n="archiveBoothLink">Open the archived gallery ↗</a></figcaption></figure><figure><img src="koiqueen-research-20261115/photos/emdat-awards-IMG_9561.JPG" alt="Six people on stage at the 2017 All Japan Combined Nishikigoi Show awards" loading="lazy"><figcaption><strong data-i18n="archiveAward">Japan, 2017 · All Japan show awards</strong><a href="https://web.archive.org/web/20170522020714/http://emdat.org/images/slides/2main-410x288/awards-IMG_9561.JPG" target="_blank" rel="noopener noreferrer" data-i18n="archiveAwardLink">Open the archived photograph ↗</a></figcaption></figure></div><div class="archive-notes"><a href="https://web.archive.org/web/20071203113808/http://www.sc-koi.com/index.php/en/home/koi_america_usa_2007" target="_blank" rel="noopener noreferrer"><span>2007 · USA</span><strong data-i18n="archiveUSA">Ms. Chung met buyers at Koi America; Koi TV filmed her at the stand.</strong><small data-i18n="archiveRead">Read the show report ↗</small></a><a href="https://web.archive.org/web/20081211024652/http://www.sc-koi.com/index.php/en/home/holland_koishow_2008" target="_blank" rel="noopener noreferrer"><span>2008 · HOLLAND</span><strong data-i18n="archive2008">Sing Chang reported three trophies and a sold-out show.</strong><small data-i18n="archiveRead">Read the show report ↗</small></a></div></div></div>
+      <div class="route-band"><div class="wrap route-grid"><div class="reveal"><p class="eyebrow light" data-i18n="routeLabel">THE LONG JOURNEY</p><h3 data-i18n="routeTitle">A bridge for living cargo.</h3><p data-i18n="routeBody">At her Pingtung trans-shipment hub, Japanese koi can be received, prepared, and sent onward to distant buyers. For routes where timing and cost make sense, her expertise in packing fish for long journeys becomes part of protecting the value of the fish itself.</p><a class="text-link light-link" href="https://www.fa.gov.tw/view.php?id=199&amp;subtheme=&amp;theme=Announcement_Info" target="_blank" rel="noopener noreferrer"><span data-i18n="routeSource">Official transfer-facility registry</span><span aria-hidden="true">↗</span></a></div><div class="route-diagram reveal" aria-label="Japan to Pingtung to the world"><div><small data-i18n="routeFrom">FROM BREEDERS</small><strong data-i18n="routeJapan">JAPAN</strong></div><span aria-hidden="true">→</span><div class="route-center"><small data-i18n="routeCare">RECEIVE · REPACK · ROUTE</small><strong data-i18n="routePingtung">PINGTUNG</strong></div><span aria-hidden="true">→</span><div><small data-i18n="routeBeyond">TO BUYERS</small><strong data-i18n="routeWorld">THE WORLD</strong></div></div></div></div>
+    </section>
+
+    <section class="koi section-pad" id="koi">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow" data-i18n="koiLabel">04 / THE KOI</p><h2 data-i18n="koiTitle">The fish are the work.</h2></div><p data-i18n="koiIntro">Colour, form, movement, and lineage. Ms. Chung’s eye brings them together. These archival images offer a first look while the current collection is being prepared.</p></div>
+        <div class="koi-grid">
+          <figure class="koi-card koi-card-a"><img src="koiqueen-research-20261115/deliverables/originals/mirror-05.jpg" alt="Koi swimming in a blue pond" loading="lazy"><figcaption><span data-i18n="koiStudy1">Colour & pattern</span><small data-i18n="archivePhoto">ARCHIVE IMAGE</small></figcaption></figure>
+          <figure class="koi-card koi-card-b"><img src="koiqueen-research-20261115/deliverables/originals/ebc-01.jpg" alt="Koi moving through dark water" loading="lazy"><figcaption><span data-i18n="koiStudy2">Movement & presence</span><small data-i18n="archivePhoto">ARCHIVE IMAGE</small></figcaption></figure>
+          <figure class="koi-card koi-card-c"><img src="koiqueen-research-20261115/deliverables/originals/ct-02.jpg" alt="Koi swimming in a garden pond" loading="lazy"><figcaption><span data-i18n="koiStudy3">The living pond</span><small data-i18n="archivePhoto">ARCHIVE IMAGE</small></figcaption></figure>
+        </div>
+        <div class="development reveal"><div class="development-head"><p class="eyebrow" data-i18n="developmentLabel">THE ART OF SEEING AHEAD</p><h3 data-i18n="developmentTitle">Before. After. What she saw between.</h3><p data-i18n="developmentIntro">Ms. Chung pioneered detailed before-and-after studies on Facebook: a young koi could look unassuming at sale, then develop into something remarkable. She taught people to read body shape, pattern, colour, and potential over time. Select fish from Sakai and Dainichi are now documented this way too.</p></div><div class="development-pair"><div><span>01 / BEFORE</span><strong data-i18n="developmentBefore">The promise is still hidden.</strong><p data-i18n="developmentBeforeBody">The first photograph records the fish as it was selected or sold.</p></div><div><span>02 / AFTER</span><strong data-i18n="developmentAfter">The decision becomes visible.</strong><p data-i18n="developmentAfterBody">A later photograph shows how care, genetics, and time changed the fish.</p></div></div><p class="development-note" data-i18n="developmentNote">An authenticated photo pair and her original analysis will replace this editorial preview.</p></div>
+        <div class="collection-cta"><div><p class="eyebrow" data-i18n="collectionLabel">CURRENT COLLECTION</p><h3 data-i18n="collectionTitle">Looking for a particular koi?</h3><p data-i18n="collectionBody">The available fish catalogue is being assembled. Tell us what you are looking for and we can begin a conversation.</p></div></div>
+      </div>
+    </section>
+
+    <section class="people section-pad" id="people">
+      <div class="wrap"><div class="section-head"><div><p class="eyebrow light" data-i18n="peopleLabel">05 / THE PEOPLE</p><h2 data-i18n="peopleTitle">No one raises a story alone.</h2></div><p data-i18n="peopleIntro">Family, breeders, dealers, and collectors all stand behind the fish. Their relationships are part of the Koiqueen story.</p></div>
+        <div class="people-grid"><article class="person-card"><img src="koiqueen-research-20261115/deliverables/originals/mirror-06.jpg" alt="Ms. Chung and her father working at the farm" loading="lazy"><div><span>01</span><h3 data-i18n="peopleFamily">Family & the farm</h3><p data-i18n="peopleFamilyBody">Where the work began, and where its stakes became personal.</p></div></article><article class="person-card"><img src="koiqueen-research-20261115/photos/udn-01.jpg" alt="People examining koi together at a pond" loading="lazy"><div><span>02</span><h3 data-i18n="peopleBreeders">Breeders & partners</h3><p data-i18n="peopleBreedersBody">The relationships that connect expertise across countries.</p></div></article><article class="person-card"><img src="koiqueen-research-20261115/deliverables/originals/mirror-01.jpg" alt="Ms. Chung with a child by a pond" loading="lazy"><div><span>03</span><h3 data-i18n="peopleNext">The next generation</h3><p data-i18n="peopleNextBody">A living craft is carried by people willing to learn and share it.</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="learning section-pad" id="learning"><div class="wrap learning-grid"><div class="reveal"><p class="eyebrow" data-i18n="learnLabel">BEYOND THE PONDS</p><h2 data-i18n="learnTitle">The artist became a teacher, too.</h2><figure class="learning-archive"><img src="koiqueen-research-20261115/photos/emdat-university-lecture.jpg" alt="Ms. Chung speaking at a university lecture" loading="lazy"><figcaption><span data-i18n="learnPhotoCaption">Ms. Chung speaking at a university · EMDAT archive</span><a href="https://web.archive.org/web/20170522020900/http://emdat.org/images/slides/main1-300x200/yingying-chung-university-lecture-300x200.jpg" target="_blank" rel="noopener noreferrer" data-i18n="learnPhotoLink">Archived photo ↗</a></figcaption></figure></div><div class="reveal"><p class="lead" data-i18n="learnLead">She studied art in Beijing before returning to the farm. That eye for form and colour became part of how she selected, presented, and spoke about koi.</p><p data-i18n="learnBody">She later earned an EMBA in Taiwan and shared what she learned in university talks. She also took students to see international koi shows and Japanese farms: the market she built became something she could teach.</p><a class="text-link" href="https://ceduai2.nptu.edu.tw/var/file/54/1054/img/426274536.pdf" target="_blank" rel="noopener noreferrer"><span data-i18n="learnSource">University lecture record</span><span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="watch section-pad"><div class="wrap watch-grid"><div><p class="eyebrow" data-i18n="watchLabel">WATCH & LISTEN</p><h2 data-i18n="watchTitle">Hear it in her own voice.</h2><p data-i18n="watchBody">A TaiwanPlus profile follows Ms. Chung’s journey from the family farm into the international koi world. Future short films and pond footage can live here without interrupting the story.</p><a class="pill dark" href="https://www.taiwanplus.com/shows/lifestyle/culture/492/in-her-shoes/s1/250325019/how-this-award-winning-koi-fish-dealer-reached-the-top-in-her-shoes-ep11" target="_blank" rel="noopener noreferrer"><span data-i18n="watchAction">Watch the profile</span><span aria-hidden="true">↗</span></a></div><a class="watch-image" href="https://www.taiwanplus.com/shows/lifestyle/culture/492/in-her-shoes/s1/250325019/how-this-award-winning-koi-fish-dealer-reached-the-top-in-her-shoes-ep11" target="_blank" rel="noopener noreferrer" aria-label="Watch the TaiwanPlus profile"><img src="koiqueen-research-20261115/deliverables/originals/taiwanplus-01.jpg" alt="Ms. Chung in a TaiwanPlus profile" loading="lazy"><span class="play" aria-hidden="true">▶</span></a></div></section>
+    <section class="evidence section-pad" id="evidence"><div class="wrap"><div class="evidence-head reveal"><p class="eyebrow" data-i18n="evidenceLabel">THE RECORD</p><h2 data-i18n="evidenceTitle">The story has witnesses.</h2><p data-i18n="evidenceIntro">Reporting, film, and public records trace the work across years. Open the original sources.</p></div><figure class="evidence-feature reveal"><img src="koiqueen-research-20261115/photos/cosmic-holland-report.jpg" alt="Ms. Chung among representatives at the 2023 All Japan koi show award ceremony, alongside images of two winning koi" loading="lazy"><figcaption data-i18n="evidenceFeature">2023 All Japan Koi Show · Chung’s company represented the two awarded fish; they were not necessarily bred at her farm. Photograph published by Cosmic Care.</figcaption></figure><div class="evidence-grid">
+      <a href="https://www.youtube.com/watch?v=nbLiaIIh4NM" target="_blank" rel="noopener noreferrer"><span>2014 · TEDxTAIPEI</span><h3 data-i18n="evTedx">Ms. Chung tells her own story</h3><small>TEDxTaipei ↗</small></a>
+      <a href="https://www.cw.com.tw/article/5000480" target="_blank" rel="noopener noreferrer"><span>2010 · MAGAZINE</span><h3 data-i18n="ev1">A direct route from Yunlin to Europe</h3><small>CommonWealth Magazine ↗</small></a>
+      <a href="https://agriculture.yunlin.gov.tw/News_Content.aspx?n=693&amp;s=206600" target="_blank" rel="noopener noreferrer"><span>2011 · DOCUMENTARY</span><h3 data-i18n="ev2">Discovery tells the Koiqueen story</h3><small>Yunlin County Government ↗</small></a>
+      <a href="https://kids.moa.gov.tw/view.php?func=knowledge&amp;subfunc=article&amp;pid=30&amp;id=162" target="_blank" rel="noopener noreferrer"><span>2009 · SHOW PHOTO</span><h3 data-i18n="ev3">The Holland show, and “Formosa Taiwan”</h3><small>Ministry of Agriculture ↗</small></a>
+      <a href="https://ceduai2.nptu.edu.tw/var/file/54/1054/img/426274536.pdf" target="_blank" rel="noopener noreferrer"><span>2015 · UNIVERSITY</span><h3 data-i18n="ev4">An invited talk on building the koi business</h3><small>National Pingtung University ↗</small></a>
+      <a href="https://www.cosmiccare.org/SupportDedication/Detail/05a2100f-c52f-4c84-bf15-275ad4355f98" target="_blank" rel="noopener noreferrer"><span>2023 · AWARDS</span><h3 data-i18n="ev5">Fish she represented win in Japan</h3><small>Cosmic Care profile ↗</small></a>
+      <a href="https://news.pts.org.tw/article/151033" target="_blank" rel="noopener noreferrer"><span>2011 · TELEVISION</span><h3 data-i18n="ev6">The farm’s rise reaches public television</h3><small>PTS News ↗</small></a>
+      <a href="https://www.fa.gov.tw/view.php?id=199&amp;subtheme=&amp;theme=Announcement_Info" target="_blank" rel="noopener noreferrer"><span>2026 · PUBLIC REGISTRY</span><h3 data-i18n="ev7">Her company’s registered transfer facility</h3><small>Taiwan Fisheries Agency ↗</small></a>
+    </div></div></section>
+  </main>
+  <footer><div class="wrap footer-grid"><div><div class="footer-brand"><span class="footer-logo" aria-hidden="true"></span>KOI QUEEN</div><p data-i18n="footerLine">Living art. A lifetime’s eye.</p></div><div><a href="#story" data-i18n="navStory">Story</a><a href="#discovery" data-i18n="footerDiscovery">Discovery</a><a href="#koi" data-i18n="navKoi">The koi</a><a href="#people" data-i18n="navPeople">People</a></div><div class="footer-contact"><span data-i18n="footerContactLabel">CONTACT · PINGTUNG</span><strong data-i18n="footerCompany">International Koi Institute · Huajin Consulting Co., Ltd.</strong><a href="mailto:info@koi-institute.com">info@koi-institute.com ↗</a><a href="tel:+88687624219">+886 8 762 4219</a><address data-i18n="footerAddress">No. 19, Yuanxi 2 Road, Dehe Village, Changzhi Township, Pingtung County 90846, Taiwan</address><a class="footer-source" href="https://koi-institute.com/about/" target="_blank" rel="noopener noreferrer" data-i18n="footerContactSource">Official contact page ↗</a><small data-i18n="footerCredit">Archival imagery and reporting are linked to their sources throughout this story.</small></div><div class="footer-qr"><img src="assets/koiqueen-qr.png" alt="Koiqueen QR code"><span data-i18n="footerQR">Scan the Koiqueen code</span></div></div></footer>
+</body>
 </html>
