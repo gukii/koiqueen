@@ -70,3 +70,6 @@ html{scroll-padding-top:76px}.site-header{position:sticky;top:0;z-index:40;box-s
 @media(max-width:720px){.tedx-grid{display:flex;flex-direction:column;align-items:stretch;gap:38px}.tedx-copy h2{font-size:clamp(39px,10vw,56px)}.tedx-copy .lead{font-size:22px}.tedx-figure figcaption{font-size:9px}}
 .presidential-photos figure{margin:0;max-width:430px}.presidential-photos img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center top}.presidential-photos figcaption{font-size:10px;line-height:1.4;letter-spacing:.06em;text-transform:uppercase;color:#657075;margin-top:10px}
 @media(max-width:720px){.presidential-photos{margin-bottom:34px}.presidential-photos figcaption{font-size:8px}}
+.intro-gallery .pond-photo{grid-column:1/-1;margin-top:8px}
+.intro-gallery .pond-photo img{width:100%;height:auto;aspect-ratio:906/610;object-fit:contain}
+@media(max-width:720px){.intro-gallery .pond-photo{margin-top:14px}}

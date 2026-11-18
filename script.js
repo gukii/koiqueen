@@ -119,6 +119,67 @@ Object.assign(copy.tw, {
 Object.assign(copy.cn, {
   tedxLabel:'2014 · TEDxTAIPEI', tedxTitle:'由她亲自讲述这段故事。', tedxLead:'在 TEDxTaipei 的舞台上，钟女士谈起背负巨额债务回到家族事业，以及如何将一次次挫折视为人生的选择。', tedxBody:'奖杯背后还有另一段历程：在男性主导的行业找到自己的位置，重整传统锦鲤事业，不再只依赖中间商，而是亲自接触海外买家。她让养鲤事业走向更开放、联系更广的市场。', tedxAction:'观看《三分之一的人生》', tedxCaption:'钟女士于 2014 年 TEDxTaipei 演讲 · 视频画面', evTedx:'钟女士亲自讲述她的故事'
 });
+Object.assign(copy.en, {
+  momentTitle:'¥203 million. One defining bid.',
+  storyTitle:'Growing up at Sing Chang. Transforming it as CEO.',
+  storyLead:'Ms. Chung grew up at Sing Chang Koi Farm in Yunlin. Art studies in Beijing took her away; the family business brought her back as CEO.',
+  storyBody:'Under Ms. Chung’s leadership, Sing Chang brought its koi to international shows and built direct relationships with overseas buyers. Her work also included running EMDAT, an export association, and organizing koi shows in Taiwan.',
+  storyNextChapter:'The next chapter took shape in Pingtung, where Ms. Chung opened her own koi trading and research business: the International Koi Institute.',
+  storyNext:'Building a market abroad',
+  captionPond:'Working in the pond · photograph supplied to Mirror Media',
+  tedxTitle:'From the farm to the world, in Ms. Chung’s words.',
+  reportTitle:'Discovery Channel brought the koi farm to the screen.',
+  reportBody:'In 2011, Discovery Channel featured Ms. Chung’s entrepreneurial journey. Yunlin County held a preview event, and its announcement described how she brought Taiwanese koi to international competitions. The archived photographs preserve her speaking to the cameras.',
+  discoveryPhoto1:'Ms. Chung at a Discovery Channel interview · EMDAT archive',
+  worldTitle:'From a Holland show booth to a global network.',
+  learnTitle:'An artist’s eye, shared with a new generation.',
+  learnLead:'Art studies in Beijing shaped Ms. Chung’s eye for form and colour. That training informed how she selected, presented, and spoke about koi.',
+  learnBody:'After earning an EMBA in Taiwan, Ms. Chung shared her experience in university talks and took students to international koi shows and Japanese farms. The market she helped build became a place to teach.',
+  watchTitle:'Watch Ms. Chung tell the story.',
+  evidenceTitle:'A career documented across decades.',
+  developmentTitle:'Before. After. The eye that saw potential.',
+  ev5:'Award-winning koi represented by Ms. Chung',
+  ev7:'A registered transfer facility in Pingtung'
+});
+Object.assign(copy.tw, {
+  momentTitle:'2.03 億日圓，一次關鍵競標。',
+  storyTitle:'在欣昌長大，成為帶領魚場轉型的總經理。',
+  storyLead:'鍾女士在雲林欣昌錦鯉養殖場長大，赴北京學習美術後，回到家族魚場擔任總經理。',
+  storyBody:'在鍾女士帶領下，欣昌帶著錦鯉參加國際展覽，直接與海外買家建立關係。她也經營 EMDAT 協會，並策辦臺灣的錦鯉展。',
+  storyNext:'在海外建立市場',
+  captionPond:'在魚池工作 · 鍾女士提供予《鏡週刊》的照片',
+  tedxTitle:'從家族魚場到國際舞台，聽鍾女士親自說。',
+  reportTitle:'Discovery Channel 將魚場故事帶上螢幕。',
+  reportBody:'2011 年，Discovery Channel 播出鍾女士的創業故事。雲林縣政府舉辦搶先分享會，並在公告中記錄她如何帶領臺灣錦鯉走向國際賽事。典藏照片留下她接受採訪的畫面。',
+  discoveryPhoto1:'鍾女士接受 Discovery Channel 訪問 · EMDAT 典藏',
+  worldTitle:'從荷蘭展位，走向國際人脈網絡。',
+  learnTitle:'美術眼光，傳給下一代。',
+  watchTitle:'聽鍾女士親自講述。',
+  evidenceTitle:'跨越數十年的事業，有跡可循。',
+  developmentTitle:'前與後，看見錦鯉的潛力。',
+  ev5:'鍾女士代理的錦鯉在日本獲獎',
+  ev7:'屏東中轉場的登錄紀錄'
+});
+Object.assign(copy.cn, {
+  momentTitle:'2.03 亿日元，一次关键竞标。',
+  storyTitle:'在欣昌长大，成为带领鱼场转型的总经理。',
+  storyLead:'钟女士在云林欣昌锦鲤养殖场长大，赴北京学习美术后，回到家族鱼场担任总经理。',
+  storyBody:'在钟女士带领下，欣昌带着锦鲤参加国际展览，直接与海外买家建立关系。她也经营 EMDAT 协会，并筹办台湾的锦鲤展。',
+  storyNext:'在海外建立市场',
+  captionPond:'在鱼池工作 · 钟女士提供给《镜周刊》的照片',
+  tedxTitle:'从家族鱼场到国际舞台，听钟女士亲自讲述。',
+  reportTitle:'Discovery Channel 将鱼场故事带上荧幕。',
+  reportBody:'2011 年，Discovery Channel 播出钟女士的创业故事。云林县政府举办抢先分享会，并在公告中记录她如何带领台湾锦鲤走向国际赛事。存档照片留下她接受采访的画面。',
+  discoveryPhoto1:'钟女士接受 Discovery Channel 采访 · EMDAT 存档',
+  worldTitle:'从荷兰展位，走向国际人脉网络。',
+  learnTitle:'美术眼光，传给下一代。',
+  watchTitle:'听钟女士亲自讲述。',
+  evidenceTitle:'跨越数十年的事业，有迹可循。',
+  developmentTitle:'前与后，看见锦鲤的潜力。',
+  ev5:'钟女士代理的锦鲤在日本获奖',
+  ev7:'屏东中转场的登记记录'
+});
+
 const languageCodes = {en:'en',tw:'zh-Hant',cn:'zh-Hans'};
 function setLanguage(lang) {
   if (!copy[lang]) lang = 'en';
