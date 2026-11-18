@@ -121,7 +121,7 @@ Object.assign(copy.cn, {
 });
 Object.assign(copy.en, {
   momentTitle:'¥203 million. One defining bid.',
-  storyTitle:'Growing up at Sing Chang. Transforming it as CEO.',
+  storyTitle:'Growing up at Sing Chang.\u00a0Transforming it as\u00a0CEO.',
   storyLead:'Ms. Chung grew up at Sing Chang Koi Farm in Yunlin. Art studies in Beijing took her away; the family business brought her back as CEO.',
   storyBody:'Under Ms. Chung’s leadership, Sing Chang brought its koi to international shows and built direct relationships with overseas buyers. Her work also included running EMDAT, an export association, and organizing koi shows in Taiwan.',
   storyNextChapter:'The next chapter took shape in Pingtung, where Ms. Chung opened her own koi trading and research business: the International Koi Institute.',
