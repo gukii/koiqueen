@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#171713">
-  <meta name="description" content="A local comic-style experiment telling the story of Koi Queen through water, ink, struggle, and choice.">
+  <meta name="description" content="An illustrated Koi Queen story told through water, ink, struggle, and choice.">
   <title>Koi Queen — A story in ink</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Koi Queen, back to top"><img src="../../assets/kq-white-crown.png" alt=""><span>KOI<span class="brand-light">QUEEN</span></span></a>
     <span class="edition">AN EXPERIMENT IN INK &amp; WATER</span>
-    <a class="site-link" href="../../index.html">MAIN SITE <span aria-hidden="true">↗</span></a>
+    <div class="header-actions"><label class="sr-only" for="language">Language</label><select id="language" aria-label="Language"><option value="en">EN</option><option value="cn">简体</option><option value="tw">繁體</option></select><a class="site-link" href="../../index.html">MAIN SITE <span aria-hidden="true">↗</span></a></div>
   </header>
 
   <nav class="chapter-nav" aria-label="Story chapters">
@@ -179,6 +180,6 @@
 
     <section class="end paper" aria-labelledby="end-title"><div class="end-inner reveal"><p class="eyebrow">END OF THIS CHAPTER</p><h2 id="end-title">The story is still<br><em>in the water.</em></h2><p>This is an illustrated interpretation of moments in Ms. Chung’s career. The main Koiqueen site holds more photographs, context, and source links.</p><div class="end-actions"><a href="../../index.html">EXPLORE THE MAIN SITE <span aria-hidden="true">↗</span></a><a href="#top">BACK TO THE BEGINNING <span aria-hidden="true">↑</span></a></div><small>Original generated illustrations are symbolic scenes, not documentary images or likenesses.</small></div></section>
   </main>
-  <footer><span>KOI QUEEN / AN INK STORY</span><span>LOCAL EXPERIMENT · 2026</span></footer>
+  <footer><span>KOI QUEEN / AN INK STORY</span><span>ILLUSTRATED EXPERIMENT · 2026</span></footer>
 </body>
 </html>

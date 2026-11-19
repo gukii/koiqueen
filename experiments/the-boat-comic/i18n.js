@@ -1,0 +1,201 @@
+const rows = [
+  ["Koi Queen — A story in ink", "錦鯉女王 — 水墨故事", "锦鲤女王 — 水墨故事"],
+  ["An illustrated Koi Queen story told through water, ink, struggle, and choice.", "以水與墨描繪鍾女士的奮鬥、抉擇與錦鯉人生。", "以水与墨描绘钟女士的奋斗、抉择与锦鲤人生。"],
+  ["Skip to story", "跳至故事", "跳至故事"],
+  ["Language", "語言", "语言"],
+  ["AN EXPERIMENT IN INK & WATER", "水與墨的敘事實驗", "水与墨的叙事实验"],
+  ["MAIN SITE", "主網站", "主网站"],
+  ["Art", "藝術", "艺术"],
+  ["Return", "歸來", "归来"],
+  ["Europe", "歐洲", "欧洲"],
+  ["Pass it on", "傳承", "传承"],
+  ["The bid", "競標", "竞标"],
+  ["The eye", "眼光", "眼光"],
+  ["hero:KOI", "錦鯉", "锦鲤"],
+  ["hero:QUEEN", "女王", "女王"],
+  ["A STORY OF MS. CHUNG · TAIWAN", "鍾女士的故事 · 臺灣", "钟女士的故事 · 台湾"],
+  ["An eye for living art.", "看見游動的藝術。", "看见游动的艺术。"],
+  ["A life shaped by difficult choices.", "在艱難抉擇中走出的道路。", "在艰难抉择中走出的道路。"],
+  ["ENTER THE STORY", "走進故事", "走进故事"],
+  ["SCROLL TO READ", "向下閱讀", "向下阅读"],
+  ["AN ILLUSTRATED EXPERIMENT / 2026", "圖像敘事實驗 / 2026", "图像叙事实验 / 2026"],
+  ["PROLOGUE / YUNLIN", "序章 / 雲林", "序章 / 云林"],
+  ["It began", "故事始於", "故事始于"],
+  ["at the water.", "池水之畔。", "池水之畔。"],
+  ["Ms. Chung grew up beside the ponds of her family’s farm. Her grandfather’s example stayed with her. She studied art in Taiwan and Beijing; years later, the family business called her home.", "鍾女士在家族魚場的池邊長大。祖父的身教一直留在她心中。她先後在臺灣與北京學習藝術；多年後，家族事業召喚她返鄉。", "钟女士在家族鱼场的池边长大。祖父的身教一直留在她心中。她先后在台湾与北京学习艺术；多年后，家族事业召唤她返乡。"],
+  ["BEFORE THE JOURNEY", "旅程開始之前", "旅程开始之前"],
+  ["A life", "一生的價值", "一生的价值"],
+  ["measured in", "在於", "在于"],
+  ["what we do.", "我們做了什麼。", "我们做了什么。"],
+  ["Ms. Chung has said that affection for her grandfather helped draw her back to the farm. In her", "鍾女士曾說，對祖父的感情是她回到魚場的原因之一。在她的", "钟女士曾说，对祖父的感情是她回到鱼场的原因之一。在她的"],
+  ["TEDxTaipei talk", "TEDxTaipei 演講", "TEDxTaipei 演讲"],
+  [", she recalls asking him how to use the hours of a life. His own work on that land became an example she carried forward.", "中，她回憶曾問祖父，人生的時間該如何運用。他在這片土地上的實踐，成了她延續的榜樣。", "中，她回忆曾问祖父，人生的时间该如何运用。他在这片土地上的实践，成了她延续的榜样。"],
+  ["A FAMILY INHERITANCE", "家族的傳承", "家族的传承"],
+  ["ILLUSTRATED INTERPRETATION", "圖像詮釋", "图像诠释"],
+  ["01 / BEFORE THE FARM", "01 / 回到魚場之前", "01 / 回到鱼场之前"],
+  ["First,", "首先，", "首先，"],
+  ["she learned", "她學會了", "她学会了"],
+  ["to see.", "如何觀看。", "如何观看。"],
+  ["One biographical account", "一篇人物報導", "一篇人物报道"],
+  ["names the art program at Fengyuan High School in Taiwan. After graduating, she studied art in Beijing, where", "記載她曾就讀臺灣豐原高中的美術班。畢業後，她到北京學習藝術，並在那裡", "记载她曾就读台湾丰原高中的美术班。毕业后，她到北京学习艺术，并在那里"],
+  ["she recalled choosing lacquer art", "選擇了大漆工藝", "选择了大漆工艺"],
+  [".", "。", "。"],
+  ["TAIWAN → BEIJING", "臺灣 → 北京", "台湾 → 北京"],
+  ["02 / THE RETURN", "02 / 歸來", "02 / 归来"],
+  ["She came", "她回到了", "她回到了"],
+  ["back to", "熟悉的", "熟悉的"],
+  ["the ponds.", "魚池。", "鱼池。"],
+  ["She returned to Sing Chang as CEO. What she had learned about colour and composition became part of how she saw, selected, and presented koi.", "她以執行長身分回到新昌養魚場。對色彩與構圖的理解，也融入她欣賞、挑選與展示錦鯉的方式。", "她以首席执行官身份回到新昌养鱼场。对色彩与构图的理解，也融入她欣赏、挑选与展示锦鲤的方式。"],
+  ["YUNLIN, TAIWAN", "臺灣雲林", "台湾云林"],
+  ["ILLUSTRATED RECONSTRUCTION", "圖像重構", "图像重构"],
+  ["THE WEIGHT", "重擔", "重担"],
+  ["Coming home did not make the work easier.", "回到家鄉，並不代表工作就變得容易。", "回到家乡，并不代表工作就变得容易。"],
+  ["THE WEIGHT / THE CHOICE", "重擔 / 抉擇", "重担 / 抉择"],
+  ["Debt on", "桌上是", "桌上是"],
+  ["the desk.", "債務。", "债务。"],
+  ["Fish in the water.", "水中是魚。", "水中是鱼。"],
+  ["In her", "在她的", "在她的"],
+  ["2014 TEDxTaipei talk", "2014 年 TEDxTaipei 演講", "2014 年 TEDxTaipei 演讲"],
+  [", Ms. Chung described returning to a family business under heavy debt. The choice was to face it, one decision at a time.", "中，鍾女士談到她回到負債沉重的家族事業。她選擇面對，一次做出一個決定。", "中，钟女士谈到她回到负债沉重的家族事业。她选择面对，一次做出一个决定。"],
+  ["A TURNING POINT", "轉折點", "转折点"],
+  ["SYMBOLIC ILLUSTRATION", "象徵性插畫", "象征性插画"],
+  ["THE DECISION", "那個決定", "那个决定"],
+  ["If the world did not know Taiwanese koi,", "如果世界還不認識臺灣錦鯉，", "如果世界还不认识台湾锦鲤，"],
+  ["she would bring the fish to the world.", "她就把魚帶到世界面前。", "她就把鱼带到世界面前。"],
+  ["At the 2003 Holland Koi Show, she saw how little of the European market knew Taiwan’s fish. The path forward ran through show halls, introductions, and trust built face to face.", "2003 年在荷蘭錦鯉展，她發現歐洲市場對臺灣錦鯉所知甚少。往前的路，要靠展場上的介紹，以及面對面建立的信任。", "2003 年在荷兰锦鲤展，她发现欧洲市场对台湾锦鲤所知甚少。往前的路，要靠展场上的介绍，以及面对面建立的信任。"],
+  ["READ THE MINISTRY OF AGRICULTURE ACCOUNT", "閱讀農業部報導", "阅读农业部报道"],
+  ["03 / THE CROSSING", "03 / 跨越海洋", "03 / 跨越海洋"],
+  ["One fish.", "一尾魚。", "一尾鱼。"],
+  ["One hall.", "一座展場。", "一座展场。"],
+  ["A wider world.", "更寬廣的世界。", "更广阔的世界。"],
+  ["She returned to European shows under the “Formosa Taiwan” name. By 2010,", "她以「Formosa Taiwan」之名重返歐洲展會。到了 2010 年，", "她以“Formosa Taiwan”之名重返欧洲展会。到了 2010 年，"],
+  ["reporting described", "媒體報導", "媒体报道"],
+  ["five international shows a year and direct relationships with overseas buyers.", "她一年參加五場國際展會，並與海外買家直接建立關係。", "她一年参加五场国际展会，并与海外买家直接建立关系。"],
+  ["TAIWAN → EUROPE", "臺灣 → 歐洲", "台湾 → 欧洲"],
+  ["AN EARLY UK SHOW", "早期的一場英國展會", "早期的一场英国展会"],
+  ["A tent.", "一頂帳篷。", "一顶帐篷。"],
+  ["A cold night.", "寒冷的一夜。", "寒冷的一夜。"],
+  ["Another morning.", "又一個清晨。", "又一个清晨。"],
+  ["For one UK exhibition, Ms. Chung slept in a tent to save hotel costs.", "有一次參加英國展會，鍾女士為了省下住宿費，睡在帳篷裡。", "有一次参加英国展会，钟女士为了省下住宿费，睡在帐篷里。"],
+  ["Her account", "她的回憶", "她的回忆"],
+  ["recalls temperatures around −4°C. The outdoor show grounds could be beautiful; getting there still demanded a great deal.", "提到當時氣溫約為零下 4°C。戶外展場有其美麗，抵達那裡卻並不容易。", "提到当时气温约为零下 4°C。户外展场有其美丽，抵达那里却并不容易。"],
+  ["UNITED KINGDOM", "英國", "英国"],
+  ["THE CIRCLE GROWS", "同行者漸多", "同行者渐多"],
+  ["The journey became", "這趟旅程，", "这趟旅程，"],
+  ["larger than one farm.", "不再只屬於一座魚場。", "不再只属于一座鱼场。"],
+  ["Later European shows became a shared effort. In 2009, Taiwanese breeders presented together in a Taiwan pavilion at the Holland Koi Show. For fellow breeders, the show meant seeing the market firsthand, hearing buyers’ responses, and forming their own opinions.", "後來，參加歐洲展會成了共同的努力。2009 年，臺灣錦鯉育種者在荷蘭錦鯉展的臺灣館一同亮相。同行的育種者得以親眼觀察市場、聽見買家的回應，形成自己的判斷。", "后来，参加欧洲展会成了共同的努力。2009 年，台湾锦鲤育种者在荷兰锦鲤展的台湾馆一同亮相。同行的育种者得以亲眼观察市场、听见买家的回应，形成自己的判断。"],
+  ["READ THE MINISTRY’S SHOW REPORT", "閱讀農業部展會報導", "阅读农业部展会报道"],
+  ["INTERPRETIVE SCENE · THE PEOPLE SHOWN ARE NOT IDENTIFIED BREEDERS", "示意場景 · 畫中人物並非可辨識的特定育種者", "示意场景 · 画中人物并非可辨识的特定育种者"],
+  ["04 / PASS IT ON", "04 / 傳承", "04 / 传承"],
+  ["The next journey", "下一段旅程，", "下一段旅程，"],
+  ["began in the mud.", "從泥土開始。", "从泥土开始。"],
+  ["Ms. Chung also opened the farm to young people. Her Koi Academy started with the work that keeps a fish farm running: clearing weeds, tending ponds, learning to catch and pack koi. It was a test of commitment and a way to learn the life behind the fish.", "鍾女士也向年輕人敞開魚場。她的錦鯉學院從魚場日常開始：除草、照顧魚池、學習捕撈和包裝錦鯉。這既是對投入程度的考驗，也讓學生認識魚背後的生活。", "钟女士也向年轻人敞开鱼场。她的锦鲤学院从鱼场日常开始：除草、照顾鱼池、学习捕捞和包装锦鲤。这既是对投入程度的考验，也让学生认识鱼背后的生活。"],
+  ["READ THE ARCHIVED KOI ACADEMY REPORT", "閱讀錦鯉學院報導存檔", "阅读锦鲤学院报道存档"],
+  ["THE FARM / AN ILLUSTRATED INTERPRETATION", "魚場 / 圖像詮釋", "鱼场 / 图像诠释"],
+  ["First, the hands learn the work.", "先讓雙手學會工作。", "先让双手学会工作。"],
+  ["Then the world opens.", "然後，世界就展開了。", "然后，世界就展开了。"],
+  ["THE SHOW / AN ILLUSTRATED INTERPRETATION", "展場 / 圖像詮釋", "展场 / 图像诠释"],
+  ["Students who did well at the farm could travel with her to Holland. There, fish keeping met international trade: they encountered dealers and customers in person, saw how people responded to different koi, and could make up their own minds about the work’s possibilities.", "在魚場表現出色的學生，可以跟她一起前往荷蘭。在那裡，養魚與國際貿易相遇：他們親自與經銷商和顧客交流，觀察人們如何回應不同的錦鯉，並對這份工作的可能性形成自己的看法。", "在鱼场表现出色的学生，可以跟她一起前往荷兰。在那里，养鱼与国际贸易相遇：他们亲自与经销商和顾客交流，观察人们如何回应不同的锦鲤，并对这份工作的可能性形成自己的看法。"],
+  ["WATCH THE PUBLIC TELEVISION STUDENT REPORT", "觀看公視學生專題", "观看公视学生专题"],
+  ["READ THE MINISTRY ACCOUNT", "閱讀農業部報導", "阅读农业部报道"],
+  ["FROM THE RECORD", "真實紀錄", "真实纪录"],
+  ["The ink gives way", "水墨退開，", "水墨退开，"],
+  ["to the archive.", "檔案走進畫面。", "档案走进画面。"],
+  ["The illustrated scenes express the stakes. The photographs show Ms. Chung at work.", "插畫描繪其中的抉擇；照片記錄鍾女士工作時的身影。", "插画描绘其中的抉择；照片记录钟女士工作时的身影。"],
+  ["SOURCE: TAIWAN MINISTRY OF AGRICULTURE", "資料來源：臺灣農業部", "资料来源：台湾农业部"],
+  ["HOLLAND KOI SHOW, 2009 · SING CHANG PHOTOGRAPH PUBLISHED BY TAIWAN’S MINISTRY OF AGRICULTURE", "2009 年荷蘭錦鯉展 · 新昌照片，由臺灣農業部刊載", "2009 年荷兰锦鲤展 · 新昌照片，由台湾农业部刊载"],
+  ["JAPAN / 2018", "日本 / 2018", "日本 / 2018"],
+  ["Then came", "接著，迎來", "接着，迎来"],
+  ["one defining bid.", "關鍵的一次出價。", "关键的一次出价。"],
+  ["05 / S-LEGEND", "05 / S-LEGEND", "05 / S-LEGEND"],
+  ["The hand", "手", "手"],
+  ["went up.", "舉起了。", "举起了。"],
+  ["¥203 million.", "2.03 億日圓。", "2.03 亿日元。"],
+  ["At Sakai Fish Farm’s 2018 auction, Ms. Chung placed the winning bid for the Kohaku S-Legend as the Taiwan dealer for a client. The price made headlines; the judgment behind it had taken years.", "2018 年在日本阪井養魚場的拍賣會上，鍾女士以臺灣代理商身分代表客戶，為紅白錦鯉 S-Legend 投下得標價。價格登上新聞；支撐那份判斷的，是多年累積的眼光。", "2018 年在日本阪井养鱼场的拍卖会上，钟女士以台湾代理商身份代表客户，为红白锦鲤 S-Legend 投下中标价。价格登上新闻；支撑那份判断的，是多年积累的眼光。"],
+  ["READ THE UK JUDGES’ ACCOUNT", "閱讀英國評審的報導", "阅读英国评审的报道"],
+  ["SAKAI FISH FARM / 2018", "阪井養魚場 / 2018", "阪井养鱼场 / 2018"],
+  ["AFTER THE NUMBER", "數字之後", "数字之后"],
+  ["A price is a moment.", "價格只是一瞬。", "价格只是一瞬。"],
+  ["An eye takes a lifetime.", "眼光需要一生。", "眼光需要一生。"],
+  ["Colour. Form. Movement. Lineage. Potential. A koi is never only the figure attached to it.", "色彩、體態、游姿、血統與潛力。一尾錦鯉，遠不只是標籤上的數字。", "色彩、体态、游姿、血统与潜力。一尾锦鲤，远不只是标签上的数字。"],
+  ["06 / THE EYE", "06 / 眼光", "06 / 眼光"],
+  ["Look closer.", "看得更近。", "看得更近。"],
+  ["Look ahead.", "也看得更遠。", "也看得更远。"],
+  ["Ms. Chung’s work asks collectors to see beyond the first impression: the body a fish has now, and what it may become with time and care.", "鍾女士的工作提醒收藏家越過第一印象，看見魚當下的體態，也看見在時間與照顧之下可能成為的模樣。", "钟女士的工作提醒收藏家越过第一印象，看见鱼当下的体态，也看见在时间与照顾之下可能成为的模样。"],
+  ["THE WORK CONTINUES", "工作仍在繼續", "工作仍在继续"],
+  ["END OF THIS CHAPTER", "本章完", "本章完"],
+  ["The story is still", "故事仍在", "故事仍在"],
+  ["in the water.", "水中流動。", "水中流动。"],
+  ["This is an illustrated interpretation of moments in Ms. Chung’s career. The main Koiqueen site holds more photographs, context, and source links.", "這些畫面是對鍾女士事業片段的圖像詮釋。Koiqueen 主網站收錄更多照片、背景與資料來源。", "这些画面是对钟女士事业片段的图像诠释。Koiqueen 主网站收录更多照片、背景与资料来源。"],
+  ["EXPLORE THE MAIN SITE", "探索主網站", "探索主网站"],
+  ["BACK TO THE BEGINNING", "回到開頭", "回到开头"],
+  ["Original generated illustrations are symbolic scenes, not documentary images or likenesses.", "原創生成插畫為象徵性場景，並非紀實影像或人物肖像。", "原创生成插画为象征性场景，并非纪实影像或人物肖像。"],
+  ["KOI QUEEN / AN INK STORY", "KOI QUEEN / 水墨故事", "KOI QUEEN / 水墨故事"],
+  ["ILLUSTRATED EXPERIMENT · 2026", "圖像敘事實驗 · 2026", "图像叙事实验 · 2026"],
+  ["Koi Queen, back to top", "錦鯉女王，返回頁首", "锦鲤女王，返回页首"],
+  ["Story chapters", "故事章節", "故事章节"],
+  ["A difficult return", "艱難的歸來", "艰难的归来"],
+  ["Ink illustration of a standard-finned red and white Kohaku swimming through dark water", "水墨畫中，一尾標準鰭的紅白錦鯉游過暗色水面", "水墨画中，一尾标准鳍的红白锦鲤游过暗色水面"],
+  ["Interpretive ink illustration of young Ms. Chung walking beside the ponds with her grandfather", "示意水墨畫：年少的鍾女士與祖父走在魚池旁", "示意水墨画：年少的钟女士与祖父走在鱼池旁"],
+  ["Illustrated interpretation of a young Ms. Chung working on a red and black painting in an art studio", "示意插畫：年輕的鍾女士在畫室創作紅黑色作品", "示意插画：年轻的钟女士在画室创作红黑色作品"],
+  ["Symbolic ink illustration of a woman looking across koi ponds at dawn", "象徵性水墨畫：一名女子在黎明望向錦鯉池", "象征性水墨画：一名女子在黎明望向锦鲤池"],
+  ["Symbolic ink illustration of a woman studying farm papers at night while rain falls outside", "象徵性水墨畫：雨夜中，一名女子查看魚場文件", "象征性水墨画：雨夜中，一名女子查看鱼场文件"],
+  ["Symbolic ink illustration of a woman carrying a koi into an unfamiliar show hall", "象徵性水墨畫：一名女子將錦鯉帶進陌生的展場", "象征性水墨画：一名女子将锦鲤带进陌生的展场"],
+  ["Illustrated interpretation of Ms. Chung asleep in a small frosted tent, its open flap facing the outdoor koi show grounds at dawn", "示意插畫：鍾女士睡在結霜的小帳篷裡，敞開的門簾外是黎明的戶外錦鯉展場", "示意插画：钟女士睡在结霜的小帐篷里，敞开的门帘外是黎明的户外锦鲤展场"],
+  ["Illustrated interpretation of Ms. Chung and fellow Taiwanese koi breeders seen from behind and the side beside raised show vats, studying three differently patterned koi beneath the water", "示意插畫：從側後方看鍾女士與臺灣錦鯉育種者在展會魚池旁觀察水下三尾花紋各異的錦鯉", "示意插画：从侧后方看钟女士与台湾锦鲤育种者在展会鱼池旁观察水下三尾花纹各异的锦鲤"],
+  ["Interpretive ink illustration of Ms. Chung, seen from behind, showing university interns how to clear weeds from a drained pond", "示意水墨畫：從背後看鍾女士示範如何清除乾涸泥池中的雜草，大學生在旁學習", "示意水墨画：从背后看钟女士示范如何清除干涸泥池中的杂草，大学生在旁学习"],
+  ["Interpretive ink illustration of interns speaking with a European dealer and customer beside four differently patterned koi swimming beneath the water", "示意水墨畫：實習生與歐洲經銷商及顧客交談，水下有四尾花紋各異的錦鯉", "示意水墨画：实习生与欧洲经销商及顾客交谈，水下有四尾花纹各异的锦鲤"],
+  ["Ms. Chung with other participants and a trophy at the Holland Koi Show in 2009", "2009 年荷蘭錦鯉展，鍾女士與其他參與者及獎盃合影", "2009 年荷兰锦鲤展，钟女士与其他参与者及奖杯合影"],
+  ["Symbolic ink illustration of a tense koi auction, a raised hand, and a submerged Kohaku whose markings are based on S-Legend", "象徵性水墨畫：緊張的錦鯉拍賣現場、舉起的手，以及花紋參照 S-Legend 的水下紅白錦鯉", "象征性水墨画：紧张的锦鲤拍卖现场、举起的手，以及花纹参照 S-Legend 的水下红白锦鲤"],
+  ["Ink illustration of hands holding a dark inspection bowl with a standard-finned red and white Kohaku inside", "水墨畫中，雙手托著深色觀賞盆，盆裡有一尾標準鰭紅白錦鯉", "水墨画中，双手托着深色观赏盆，盆里有一尾标准鳍红白锦鲤"]
+];
+
+const translations = {
+  tw: new Map(rows.map(([en, tw]) => [en, tw])),
+  cn: new Map(rows.map(([en, , cn]) => [en, cn]))
+};
+const languageCodes = {en: 'en', cn: 'zh-Hans', tw: 'zh-Hant'};
+const languageSelect = document.getElementById('language');
+const originalTitle = document.title;
+const description = document.querySelector('meta[name="description"]');
+const originalDescription = description.content;
+const textNodes = [];
+const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+while (walker.nextNode()) {
+  const node = walker.currentNode;
+  const original = node.nodeValue;
+  const key = original.trim();
+  if (key && !node.parentElement.closest('.brand, select')) textNodes.push({node, original, key});
+}
+const attributes = [];
+document.querySelectorAll('[alt], [aria-label]').forEach(element => {
+  for (const name of ['alt', 'aria-label']) {
+    if (element.hasAttribute(name)) attributes.push({element, name, original: element.getAttribute(name)});
+  }
+});
+
+function setLanguage(lang) {
+  if (!languageCodes[lang]) lang = 'en';
+  const map = translations[lang];
+  document.documentElement.lang = languageCodes[lang];
+  languageSelect.value = lang;
+  for (const {node, original, key} of textNodes) {
+    const lookup = node.parentElement.closest('#hero-title') ? `hero:${key}` : key;
+    const value = map?.get(lookup) ?? key;
+    const start = original.indexOf(key);
+    node.nodeValue = original.slice(0, start) + value + original.slice(start + key.length);
+  }
+  for (const {element, name, original} of attributes) element.setAttribute(name, map?.get(original) ?? original);
+  document.title = map?.get(originalTitle) ?? originalTitle;
+  description.content = map?.get(originalDescription) ?? originalDescription;
+  const url = new URL(location.href);
+  url.searchParams.set('lang', lang);
+  history.replaceState(null, '', url);
+  try { localStorage.setItem('kq-language', lang); } catch {}
+}
+
+const selectedLanguage = new URLSearchParams(location.search).get('lang') || (() => {
+  try { return localStorage.getItem('kq-language'); } catch { return null; }
+})();
+setLanguage(selectedLanguage || 'en');
+languageSelect.addEventListener('change', event => setLanguage(event.target.value));
