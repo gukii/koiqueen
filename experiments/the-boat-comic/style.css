@@ -45,3 +45,42 @@ footer{display:flex;justify-content:space-between;gap:25px;padding:28px 5%;backg
 @media(max-width:390px){.hero h1{font-size:79px}.scene-copy h2{font-size:44px}.scene-copy>p:not(.eyebrow){font-size:17px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-art img{animation:none;transform:none}.scene-art img{transform:none!important;transition:none}.js .reveal{opacity:1;transform:none;transition:none}}
 @media(max-width:700px){.together-art img{min-height:0;height:auto;object-fit:contain}}
+
+/* Full-bleed narrative panels and portrait compositions. */
+.scene-art picture{display:block;width:100%;height:100%}
+.decision-scene .scene-copy h2{font-size:clamp(43px,4.4vw,70px);line-height:1.11}
+.decision-scene .scene-shade,.together-scene .scene-shade,.archive-scene .scene-shade{background:linear-gradient(90deg,rgba(10,10,9,.02) 27%,rgba(10,10,9,.7) 58%,rgba(10,10,9,.95))}
+.together-scene .scene-art img{object-position:20% center}
+.together-scene .scene-copy{width:min(660px,50vw);margin-right:6vw}
+.together-scene .scene-copy h2{font-size:clamp(37px,3.5vw,54px)}
+.image-only-scene{min-height:100svh}
+.image-only-scene .scene-art img{object-position:20% center}
+.image-only-scene .scene-foot{padding-top:35px;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent)}
+.academy-bridge{min-height:45svh;display:grid;place-items:center;padding:55px 8vw}
+.academy-bridge .academy-turn{margin:0}
+.academy-outro-section .academy-outro{margin:0 auto}
+.archive-scene .scene-art img{filter:grayscale(.75) sepia(.15) contrast(1.1);object-position:47% center}
+.archive-scene .scene-copy h2{font-size:clamp(44px,5vw,78px)}
+.organizer-scene .scene-art img,.judge-scene .scene-art img{object-position:18% center}
+.organizer-scene .scene-shade,.judge-scene .scene-shade{background:linear-gradient(90deg,rgba(10,10,9,.02) 23%,rgba(10,10,9,.71) 59%,rgba(10,10,9,.96))}
+.organizer-scene .scene-copy h2,.judge-scene .scene-copy h2{font-size:clamp(48px,5vw,80px)}
+.judge-scene .scene-link+.scene-link{margin-left:22px}
+@media(min-width:701px) and (max-width:1200px){.chapter-nav .nav-name{display:none}.chapter-nav a{min-width:0;justify-content:center}}
+@media(max-width:700px){
+  .decision-scene .scene-shade,.together-scene .scene-shade,.archive-scene .scene-shade,.organizer-scene .scene-shade,.judge-scene .scene-shade{background:linear-gradient(0deg,rgba(10,10,9,.97) 1%,rgba(10,10,9,.87) 32%,rgba(10,10,9,.12) 69%,transparent 88%)}
+  .decision-scene .scene-copy h2{font-size:clamp(40px,9vw,58px)}
+  .together-scene .scene-copy{width:calc(100% - 48px);margin:0 24px}
+  .together-scene .scene-copy h2{font-size:clamp(44px,10vw,65px)}
+  .grandfather-scene .scene-art img{object-position:35% top}
+  .decision-scene .scene-art img,.together-scene .scene-art img{object-position:center top}
+  .image-only-scene{min-height:100svh}
+  .image-only-scene .scene-art img{object-position:center top}
+  .academy-bridge{min-height:45svh;padding:75px 24px}
+  .archive-scene .scene-art img{object-position:44% center}
+  .archive-scene .scene-copy h2{font-size:clamp(44px,9vw,65px)}
+  .organizer-scene .scene-art img,.judge-scene .scene-art img{object-position:center top}
+  .organizer-scene .scene-copy h2,.judge-scene .scene-copy h2{font-size:clamp(43px,10vw,65px)}
+  .judge-scene .scene-link+.scene-link{margin-left:0}
+  .bid-scene .scene-art img{object-position:65% top}
+  .bid-scene .scene-copy{padding-top:38svh}
+}
