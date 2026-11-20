@@ -1,4 +1,19 @@
 const evidencePhotos = {
+  beijingYingying: {
+    src: 'assets/archive-beijing-yingying.jpg',
+    caption: ['Yingying during her Beijing art years · photograph supplied from the family archive', '瑩瑩在北京學藝時期 · 家庭檔案照片', '莹莹在北京学艺时期 · 家庭档案照片'],
+    url: 'assets/archive-beijing-yingying.jpg'
+  },
+  beijingWork: {
+    src: 'assets/archive-beijing-lacquer-work.jpg',
+    caption: ['Yingying working on a dark lacquer panel · photograph supplied from the family archive', '瑩瑩在深色漆板上作業 · 家庭檔案照片', '莹莹在深色漆板上作业 · 家庭档案照片'],
+    url: 'assets/archive-beijing-lacquer-work.jpg'
+  },
+  beijingArtwork: {
+    src: 'assets/archive-beijing-artwork.jpg',
+    caption: ['Artwork preserved with the Beijing study photographs · family archive', '與北京求學照片一同保存的作品 · 家庭檔案', '与北京求学照片一同保存的作品 · 家庭档案'],
+    url: 'assets/archive-beijing-artwork.jpg'
+  },
   family: {
     src: '../../koiqueen-research-20261115/photos/mirror-04.jpg',
     caption: ['Family archive photograph, published by Mirror Media', '家庭檔案照片，鏡週刊刊載', '家庭档案照片，镜周刊刊载'],
@@ -62,7 +77,7 @@ const evidencePhotos = {
   japan: {
     src: '../../koiqueen-research-20261115/photos/cosmic-holland-report.jpg',
     caption: ['At the 2023 All Japan awards · Cosmic Care; this is an awards photo, not a judging session', '2023 年全日本展會頒獎現場 · Cosmic Care；並非評審工作照', '2023 年全日本展会颁奖现场 · Cosmic Care；并非评审工作照'],
-    url: 'https://www.cosmiccare.org/news'
+    url: 'https://www.cosmiccare.org/SupportDedication/Detail/05a2100f-c52f-4c84-bf15-275ad4355f98'
   },
   auction: {
     src: '../../koiqueen-research-20261115/photos/mikeshouts-01.jpg',
@@ -82,8 +97,11 @@ const evidenceNotes = {
     ['Family and farm profile · Mirror Media', '家族與魚場專訪 · 鏡週刊', '家族与鱼场专访 · 镜周刊', 'https://www.mirrormedia.mg/story/20170505pol005']
   ],
   art: [
-    ['Art school and lacquer studies · biographical account', '美術班與大漆工藝 · 人物報導', '美术班与大漆工艺 · 人物报道', 'https://blog.udn.com/article/article_print.jsp?f_ART_ID=82521947&f_CODE=1790360195558&uid=rosa9988'],
-    ['Beijing lacquer recollection · Mirror Media', '北京大漆工藝回憶 · 鏡週刊', '北京大漆工艺回忆 · 镜周刊', 'https://www.mirrormedia.mg/story/20170505pol005']
+    ['Fengyuan High School art program · biographical account', '豐原高中美術班 · 人物報導', '丰原高中美术班 · 人物报道', 'https://blog.udn.com/article/article_print.jsp?f_ART_ID=82521947&f_CODE=1790360195558&uid=rosa9988']
+  ],
+  beijing: [
+    ['Yingying recalled choosing lacquer art · Mirror Media', '瑩瑩回憶選修大漆工藝 · 鏡週刊', '莹莹回忆选修大漆工艺 · 镜周刊', 'https://www.mirrormedia.mg/story/20170505pol005'],
+    ['Academy history and 1999 name change · Tsinghua University', '學院沿革與 1999 年更名 · 清華大學', '学院沿革与 1999 年更名 · 清华大学', 'https://www.ad.tsinghua.edu.cn/gy/lsyg.htm']
   ],
   return: [
     ['Return to the farm · Ministry of Agriculture profile', '返鄉接班 · 農業部人物報導', '返乡接班 · 农业部人物报道', 'https://kmweb.moa.gov.tw/theme_data.php?id=51259&sub_theme=quality_farmer&theme=news'],
@@ -142,7 +160,7 @@ const evidenceNotes = {
 };
 
 const evidenceScenes = {
-  grandfather: ['family', 'father'], art: ['farm'], return: ['farm', 'father'],
+  grandfather: ['family', 'father'], art: ['beijingYingying'], beijing: ['beijingWork', 'beijingArtwork', 'beijingYingying'], return: ['farm', 'father'],
   pressure: ['tedx', 'father'], decision: ['holland2005', 'holland2009'],
   crossing: ['holland2005', 'holland2011'], tent: ['holland2005'],
   together: ['holland2009', 'holland2018'], discus: ['discus'],
