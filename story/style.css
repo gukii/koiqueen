@@ -62,12 +62,16 @@ footer{display:flex;justify-content:space-between;gap:25px;padding:28px 5%;backg
 .archive-scene .scene-art img{filter:grayscale(.75) sepia(.15) contrast(1.1);object-position:47% center}
 .archive-scene .scene-copy h2{font-size:clamp(44px,5vw,78px)}
 .organizer-scene .scene-art img,.judge-scene .scene-art img{object-position:18% center}
+.iki-scene .scene-art img{object-position:90% center}
+.iki-scene .scene-shade{background:linear-gradient(90deg,rgba(10,10,9,.96) 0%,rgba(10,10,9,.8) 37%,rgba(10,10,9,.12) 74%)}
+.iki-scene .scene-copy{width:min(620px,48vw)}
+.iki-scene .scene-copy h2{font-size:clamp(48px,5vw,78px)}
 .organizer-scene .scene-shade,.judge-scene .scene-shade{background:linear-gradient(90deg,rgba(10,10,9,.02) 23%,rgba(10,10,9,.71) 59%,rgba(10,10,9,.96))}
 .organizer-scene .scene-copy h2,.judge-scene .scene-copy h2{font-size:clamp(48px,5vw,80px)}
 .judge-scene .scene-link+.scene-link{margin-left:22px}
 @media(min-width:701px) and (max-width:1200px){.chapter-nav .nav-name{display:none}.chapter-nav a{min-width:0;justify-content:center}}
 @media(max-width:700px){
-  .decision-scene .scene-shade,.together-scene .scene-shade,.archive-scene .scene-shade,.organizer-scene .scene-shade,.judge-scene .scene-shade{background:linear-gradient(0deg,rgba(10,10,9,.97) 1%,rgba(10,10,9,.87) 32%,rgba(10,10,9,.12) 69%,transparent 88%)}
+  .decision-scene .scene-shade,.together-scene .scene-shade,.archive-scene .scene-shade,.organizer-scene .scene-shade,.judge-scene .scene-shade,.iki-scene .scene-shade{background:linear-gradient(0deg,rgba(10,10,9,.97) 1%,rgba(10,10,9,.87) 42%,rgba(10,10,9,.08) 80%,transparent 94%)}
   .decision-scene .scene-copy h2{font-size:clamp(40px,9vw,58px)}
   .together-scene .scene-copy{width:calc(100% - 48px);margin:0 24px}
   .together-scene .scene-copy h2{font-size:clamp(44px,10vw,65px)}
@@ -79,6 +83,9 @@ footer{display:flex;justify-content:space-between;gap:25px;padding:28px 5%;backg
   .archive-scene .scene-art img{object-position:44% center}
   .archive-scene .scene-copy h2{font-size:clamp(44px,9vw,65px)}
   .organizer-scene .scene-art img,.judge-scene .scene-art img{object-position:center top}
+  .iki-scene .scene-art img{object-position:center top}
+  .iki-scene .scene-copy{width:calc(100% - 48px);margin:0 24px;padding-top:42svh}
+  .iki-scene .scene-copy h2{font-size:clamp(43px,10vw,65px)}
   .organizer-scene .scene-copy h2,.judge-scene .scene-copy h2{font-size:clamp(43px,10vw,65px)}
   .judge-scene .scene-link+.scene-link{margin-left:0}
   .bid-scene .scene-art img{object-position:65% top}

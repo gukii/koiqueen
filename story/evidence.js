@@ -79,6 +79,16 @@ const evidencePhotos = {
     caption: ['At the 2023 All Japan awards · Cosmic Care; this is an awards photo, not a judging session', '2023 年全日本展會頒獎現場 · Cosmic Care；並非評審工作照', '2023 年全日本展会颁奖现场 · Cosmic Care；并非评审工作照'],
     url: 'https://www.cosmiccare.org/SupportDedication/Detail/05a2100f-c52f-4c84-bf15-275ad4355f98'
   },
+  ikiFarm: {
+    src: 'assets/iki-yingying-farm.jpg',
+    caption: ['Yingying at a koi facility · crop from the IKI website’s archival photo montage', '瑩瑩在錦鯉場 · 裁自 IKI 網站的歷史照片組圖', '莹莹在锦鲤场 · 裁自 IKI 网站的历史照片组图'],
+    url: 'https://koi-institute.com/'
+  },
+  ikiSpeaking: {
+    src: 'assets/iki-yingying-speaking.jpg',
+    caption: ['Yingying speaking · crop from the IKI website’s archival photo montage', '瑩瑩演講 · 裁自 IKI 網站的歷史照片組圖', '莹莹演讲 · 裁自 IKI 网站的历史照片组图'],
+    url: 'https://koi-institute.com/'
+  },
   auction: {
     src: '../koiqueen-research-20261115/photos/mikeshouts-01.jpg',
     caption: ['Ms. Chung at the 2018 S-Legend auction · Mike Shouts', '鍾女士在 2018 年 S-Legend 拍賣會 · Mike Shouts', '钟女士在 2018 年 S-Legend 拍卖会 · Mike Shouts'],
@@ -116,7 +126,8 @@ const evidenceNotes = {
   ],
   crossing: [
     ['Archived 2005 TaiwanKOI booth gallery · Wayback', '2005 年 TaiwanKOI 攤位相簿存檔', '2005 年 TaiwanKOI 展位相册存档', 'https://web.archive.org/web/20060613033354/http://www.taiwankoi.com/PHOTOS/Taiwankoi%20Exhibitions/Holland%20Koishow%202005/index.php'],
-    ['International show circuit · CommonWealth Magazine, 2010', '國際展會行程 · 天下雜誌，2010 年', '国际展会行程 · 天下杂志，2010 年', 'https://www.cw.com.tw/article/5000480']
+    ['International show circuit · CommonWealth Magazine, 2010', '國際展會行程 · 天下雜誌，2010 年', '国际展会行程 · 天下杂志，2010 年', 'https://www.cw.com.tw/article/5000480'],
+    ['Sing Chang’s 2007 US show report · Wayback', '欣昌 2007 年美國展會報導 · 網頁存檔', '欣昌 2007 年美国展会报道 · 网页存档', 'https://web.archive.org/web/20071203113808/http://www.sc-koi.com/index.php/en/home/koi_america_usa_2007']
   ],
   tent: [
     ['Her account of the cold UK show · Cheers', '英國寒夜的親述 · Cheers', '英国寒夜的亲述 · Cheers', 'https://www.cheers.com.tw/index.php/article/article.action?id=5029608']
@@ -139,6 +150,11 @@ const evidenceNotes = {
   ],
   organizer: [
     ['2013 young koi show report names her organizing chair · video', '2013 年若鯉展報導記載她擔任大會主任委員 · 影片', '2013 年若鲤展报道记载她担任大会主任委员 · 视频', 'https://www.youtube.com/watch?v=eyTkv-94DE8']
+  ],
+  iki: [
+    ['2014 opening in Pingtung · Taiwan Fisheries Agency', '2014 年屏東開幕 · 臺灣漁業署', '2014 年屏东开幕 · 台湾渔业署', 'https://www.fa.gov.tw/view.php?id=1344&print=Y&subtheme=&theme=Press_release'],
+    ['International Koi Institute profile · official site', '國際錦鯉研究學院簡介 · 官方網站', '国际锦鲤研究学院简介 · 官方网站', 'https://koi-institute.com/about/'],
+    ['Education and research programme · IKI', '教學與研究計畫 · IKI', '教学与研究计划 · IKI', 'https://koi-institute.com/research/']
   ],
   judge: [
     ['Profile reporting her judging in Japan · Verse', '記載她在日本擔任評審的人物報導 · Verse', '记载她在日本担任评审的人物报道 · Verse', 'https://www.verse.com.tw/article/inflorescence'],
@@ -165,7 +181,7 @@ const evidenceScenes = {
   crossing: ['holland2005', 'holland2011'], tent: ['holland2005'],
   together: ['holland2009', 'holland2018'], discus: ['discus'],
   'academy-work': ['students', 'farm'], 'academy-show': ['holland2011', 'holland2009'],
-  organizer: ['press', 'holland2009'], judge: ['japan', 'holland2018'],
+  organizer: ['press', 'holland2009'], iki: ['ikiFarm', 'ikiSpeaking'], judge: ['japan', 'holland2018'],
   talks: ['lecture', 'tedx'], archive: ['farm'], bid: ['auction'], eye: ['koi']
 };
 
