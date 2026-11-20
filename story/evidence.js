@@ -15,77 +15,77 @@ const evidencePhotos = {
     url: 'assets/archive-beijing-artwork.jpg'
   },
   family: {
-    src: '../../koiqueen-research-20261115/photos/mirror-04.jpg',
+    src: '../koiqueen-research-20261115/photos/mirror-04.jpg',
     caption: ['Family archive photograph, published by Mirror Media', '家庭檔案照片，鏡週刊刊載', '家庭档案照片，镜周刊刊载'],
     url: 'https://www.mirrormedia.mg/story/20170505pol005'
   },
   farm: {
-    src: '../../koiqueen-research-20261115/photos/mirror-03.jpg',
+    src: '../koiqueen-research-20261115/photos/mirror-03.jpg',
     caption: ['Ms. Chung at the family farm · Mirror Media', '鍾女士在家族魚場 · 鏡週刊', '钟女士在家族鱼场 · 镜周刊'],
     url: 'https://www.mirrormedia.mg/story/20170505pol005'
   },
   father: {
-    src: '../../koiqueen-research-20261115/photos/mirror-06.jpg',
+    src: '../koiqueen-research-20261115/photos/mirror-06.jpg',
     caption: ['Ms. Chung and her father at work · Mirror Media', '鍾女士與父親在魚場工作 · 鏡週刊', '钟女士与父亲在鱼场工作 · 镜周刊'],
     url: 'https://www.mirrormedia.mg/story/20170505pol005'
   },
   tedx: {
-    src: '../../koiqueen-research-20261115/tedx-media/nbLiaIIh4NM.jpg',
+    src: '../koiqueen-research-20261115/tedx-media/nbLiaIIh4NM.jpg',
     caption: ['Ms. Chung telling her story at TEDxTaipei, 2014 · video still', '鍾女士在 TEDxTaipei 分享故事，2014 年 · 影片截圖', '钟女士在 TEDxTaipei 分享故事，2014 年 · 视频截图'],
     url: 'https://www.youtube.com/watch?v=nbLiaIIh4NM'
   },
   holland2005: {
-    src: '../../koiqueen-research-20261115/photos/archive-holland-2005-TaiwanKoi-in-Holland-2005-640-14.jpg',
+    src: '../koiqueen-research-20261115/photos/archive-holland-2005-TaiwanKoi-in-Holland-2005-640-14.jpg',
     caption: ['TaiwanKOI booth at the Holland Koi Show, 2005 · archived exhibition gallery', '2005 年荷蘭錦鯉展 TaiwanKOI 攤位 · 展會存檔', '2005 年荷兰锦鲤展 TaiwanKOI 展位 · 展会存档'],
     url: 'https://web.archive.org/web/20060613033354/http://www.taiwankoi.com/PHOTOS/Taiwankoi%20Exhibitions/Holland%20Koishow%202005/index.php'
   },
   holland2009: {
-    src: '../../koiqueen-research-20261115/photos/moa-holland-2009.jpg',
+    src: '../koiqueen-research-20261115/photos/moa-holland-2009.jpg',
     caption: ['Holland Koi Show, 2009 · photograph published by Taiwan’s Ministry of Agriculture', '2009 年荷蘭錦鯉展 · 臺灣農業部刊載', '2009 年荷兰锦鲤展 · 台湾农业部刊载'],
     url: 'https://kmweb.moa.gov.tw/theme_data.php?id=53062&sub_theme=variety&theme=news'
   },
   holland2011: {
-    src: '../../koiqueen-research-20261115/photos/sc-koi-holland-2011-collage.jpg',
+    src: '../koiqueen-research-20261115/photos/sc-koi-holland-2011-collage.jpg',
     caption: ['Holland show, 2011 · Sing Chang’s archived photo report', '2011 年荷蘭展會 · 欣昌照片報導存檔', '2011 年荷兰展会 · 欣昌照片报道存档'],
     url: 'https://web.archive.org/web/20120213141253/http://www.sc-koi.com/index.php/en/home/holland_koishow_2011'
   },
   holland2018: {
-    src: '../../koiqueen-research-20261115/photos/uk-judges-2019.jpg',
+    src: '../koiqueen-research-20261115/photos/uk-judges-2019.jpg',
     caption: ['Ms. Chung with British koi judges at the 2018 Holland show · Koi Judges UK', '鍾女士與英國錦鯉評審在 2018 年荷蘭展會 · Koi Judges UK', '钟女士与英国锦鲤评审在 2018 年荷兰展会 · Koi Judges UK'],
     url: 'https://koijudges.uk/s-legend/'
   },
   discus: {
-    src: '../../koiqueen-research-20261115/more/gvm2011-01.jpg',
+    src: '../koiqueen-research-20261115/more/gvm2011-01.jpg',
     caption: ['Taiwan discus farm and awards · Global Views, 2011', '臺灣七彩神仙魚魚場與獎盃 · 遠見雜誌，2011 年', '台湾七彩神仙鱼鱼场与奖杯 · 远见杂志，2011 年'],
     url: 'https://www.gvm.com.tw/article/15534'
   },
   students: {
-    src: '../../koiqueen-research-20261115/photos/emdat-students-in-class-410x288.jpg',
+    src: '../koiqueen-research-20261115/photos/emdat-students-in-class-410x288.jpg',
     caption: ['Students in a koi training session · EMDAT archive; context, not a farm internship image', '錦鯉課程中的學生 · EMDAT 存檔；並非魚場實習照', '锦鲤课程中的学生 · EMDAT 存档；并非鱼场实习照'],
     url: 'https://web.archive.org/web/20170522020737/http://emdat.org/'
   },
   press: {
-    src: '../../koiqueen-research-20261115/photos/emdat-yingying-chung-press-conference-yunlin-410x288.jpg',
+    src: '../koiqueen-research-20261115/photos/emdat-yingying-chung-press-conference-yunlin-410x288.jpg',
     caption: ['Ms. Chung at a Yunlin press event · EMDAT archive; related public role', '鍾女士在雲林記者會 · EMDAT 存檔；相關公共活動', '钟女士在云林记者会 · EMDAT 存档；相关公共活动'],
     url: 'https://agriculture.yunlin.gov.tw/News_Content.aspx?n=693&s=206600'
   },
   lecture: {
-    src: '../../koiqueen-research-20261115/photos/emdat-university-lecture.jpg',
+    src: '../koiqueen-research-20261115/photos/emdat-university-lecture.jpg',
     caption: ['Ms. Chung speaking at a university · EMDAT archive', '鍾女士在大學演講 · EMDAT 存檔', '钟女士在大学演讲 · EMDAT 存档'],
     url: 'https://web.archive.org/web/20170522020900/http://emdat.org/images/slides/main1-300x200/yingying-chung-university-lecture-300x200.jpg'
   },
   japan: {
-    src: '../../koiqueen-research-20261115/photos/cosmic-holland-report.jpg',
+    src: '../koiqueen-research-20261115/photos/cosmic-holland-report.jpg',
     caption: ['At the 2023 All Japan awards · Cosmic Care; this is an awards photo, not a judging session', '2023 年全日本展會頒獎現場 · Cosmic Care；並非評審工作照', '2023 年全日本展会颁奖现场 · Cosmic Care；并非评审工作照'],
     url: 'https://www.cosmiccare.org/SupportDedication/Detail/05a2100f-c52f-4c84-bf15-275ad4355f98'
   },
   auction: {
-    src: '../../koiqueen-research-20261115/photos/mikeshouts-01.jpg',
+    src: '../koiqueen-research-20261115/photos/mikeshouts-01.jpg',
     caption: ['Ms. Chung at the 2018 S-Legend auction · Mike Shouts', '鍾女士在 2018 年 S-Legend 拍賣會 · Mike Shouts', '钟女士在 2018 年 S-Legend 拍卖会 · Mike Shouts'],
     url: 'https://koijudges.uk/s-legend/'
   },
   koi: {
-    src: '../../koiqueen-research-20261115/photos/emdat-tokyo-awarded-koi.jpg',
+    src: '../koiqueen-research-20261115/photos/emdat-tokyo-awarded-koi.jpg',
     caption: ['Awarded Japanese show koi · EMDAT archive; not S-Legend', '日本得獎錦鯉 · EMDAT 存檔；並非 S-Legend', '日本获奖锦鲤 · EMDAT 存档；并非 S-Legend'],
     url: 'https://web.archive.org/web/20170522020737/http://emdat.org/'
   }
