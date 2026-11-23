@@ -180,6 +180,10 @@ Object.assign(copy.cn, {
   ev7:'屏东中转场的登记记录'
 });
 
+Object.assign(copy.en, {storyFloatKicker:'MS. CHUNG’S LIFE', storyFloatLabel:'Illustrated story'});
+Object.assign(copy.tw, {storyFloatKicker:'鍾女士的人生', storyFloatLabel:'水墨故事'});
+Object.assign(copy.cn, {storyFloatKicker:'钟女士的人生', storyFloatLabel:'水墨故事'});
+
 const languageCodes = {en:'en',tw:'zh-Hant',cn:'zh-Hans'};
 function setLanguage(lang) {
   if (!copy[lang]) lang = 'en';
