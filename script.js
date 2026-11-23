@@ -180,10 +180,6 @@ Object.assign(copy.cn, {
   ev7:'屏东中转场的登记记录'
 });
 
-Object.assign(copy.en, {heroStart:'Read the story in ink', footerInkStory:'Story in ink'});
-Object.assign(copy.tw, {heroStart:'閱讀水墨故事', footerInkStory:'水墨故事'});
-Object.assign(copy.cn, {heroStart:'阅读水墨故事', footerInkStory:'水墨故事'});
-
 const languageCodes = {en:'en',tw:'zh-Hant',cn:'zh-Hans'};
 function setLanguage(lang) {
   if (!copy[lang]) lang = 'en';
